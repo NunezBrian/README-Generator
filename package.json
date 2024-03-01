@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "inquirer": "^9.2.15"
+  },
+  "name": "readme-generator",
+  "description": "A command-line application to generate a professional README.md",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NunezBrian/README-Generator.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "Brian Nunez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NunezBrian/README-Generator/issues"
+  },
+  "homepage": "https://github.com/NunezBrian/README-Generator#readme"
+}

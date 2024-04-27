@@ -36,7 +36,8 @@ const questions = [
         'Unlicense',
         'BSD 2-clause',
         'LGPLv3',
-        'AGPLv3'
+        'AGPLv3',
+        'None'
       ],
     },
     {

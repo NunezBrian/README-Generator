@@ -11,8 +11,26 @@ function generateReadme(answers) {
       Unlicense: '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)',
       'BSD 2-clause': '[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)',
       LGPLv3: '[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)',
-      AGPLv3: '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)'
+      AGPLv3: '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)',
+      None: ' '
     };
+
+    let licenseSection = '';
+
+    if(license === 'None'){
+        licenseSection = ''
+    }else {
+        licenseSection = ` ## License
+        This project is licensed under the ${license} license.`
+    }
+
+    let licenseLink;
+
+    if(license === 'None'){
+        licenseLink = '';
+    }else{
+        licenseLink = '- [License](#license)'
+    }
   
     // Generate README content
     return `
@@ -26,7 +44,7 @@ function generateReadme(answers) {
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [License](#license)
+  ${licenseLink}
   - [Contributing](#contributing)
   - [Questions](#questions)
   
@@ -38,8 +56,7 @@ function generateReadme(answers) {
   ## Usage
   ${usage}
   
-  ## License
-  This project is licensed under the ${license} license.
+ ${licenseSection}
   
   ## Contributing
   ${contributing}

@@ -1,14 +1,13 @@
 {
   "dependencies": {
-    "inquirer": "^9.2.15"
+    "inquirer": "^8.2.4"
   },
   "name": "readme-generator",
   "description": "A command-line application to generate a professional README.md",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "test"
+    "test": " "
   },
   "repository": {
     "type": "git",
